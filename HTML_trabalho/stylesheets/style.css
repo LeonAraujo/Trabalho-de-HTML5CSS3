@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Slabo+13px&display=swap');
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+body {
+	overflow-x: hidden;
+}
+header{
+	background: #f7f1e3;
+	color:#218c74;
+	height: 10vh;
+}
+.main{
+  background:#dcdde1;
+  clear:both; /* Preventivo */
+}
+footer{
+	background:#353b48;
+	color:#f7f1e3;
+}
+.logo{
+	width: 20vw;
+	height: 10vh;
+	background-color: cyan;
+	float: left;
+}
+.logo > img {
+	width: 20vw;
+	height: 10vh;
+}
+.menu{
+	float: right;
+	display: flex;
+
+	justify-content: center;
+	align-content: center;
+  /*	gap: 5px;*/
+}
+.menu > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-weight: bolder;
+	font-size:1.1rem;
+	background-color: #f7f1e3;
+	width: 8vw;
+	text-align: center;
+	border:dotted 1px white;
+	height:10vh;
+  cursor:pointer;
+  transition: 0.3s;
+}
+.menu > div:hover{
+	background-color:#d1ccc0;
+	font-size: 1.2rem;
+	transition: 0.3s;
+}
+
+.banner{
+	max-width:100vw;
+	height:90vh;
+	background:red;
+	
+	background-image:url("../imgs/banner.png"); /* Imagem como plano de fundo */ 
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+
+}
+.slogan{
+	max-width: 100vw;
+	width:100vw;
+	height:90vh;
+	background: cyan;
+
+	text-transform: uppercase; 
+	font-size: 2.5rem;
+	color: #eae2da; 
+	text-align: center;
+	padding-top: 38vh; /* Espaço interno entre conteúdo e borda do elemento */
+	text-shadow: 1px 1px 5px red;
+	letter-spacing: 5px;
+	font-family: "Edu AU VIC WA NT Pre", cursive;
+
+	/* position: static; - Aplicado por padrão */ 
+	/*position: relative;
+	left:20px; 
+	top:40px; */
+ /* position: fixed;
+  bottom: 0px;
+  left:0px;  
+  z-index:1;*/ 
+  position: absolute;
+  top: 10vh;
+  background-color: rgba(87, 80, 77, 0.6);
+}
+.titulo_sobre {
+    width: 100vw;
+    text-align: center;
+    font-size: 30px;
+}
+.sobre {
+    height: 75vh;
+    width: 100vw;
+    background-color: #218c74;
+    display: flex;
+}
+.textoSobre {
+    text-align: cent;
+    font-size: 29px;
+    color: #0eec90;
+    height: 75vh;
+    width: 55vw;
+    background-color: #ffffff;
+    padding: 100px;
+}
+.imagemSobre {
+    background-color: #fff;
+    height: 75vh;
+    width: 45vw;
+}
+.imagemSobre img {
+    margin-top: 40px;
+    height: 55vh;
+    width: 40vw;
+}
+.miviva {
+    gap: 20px;
+    display: flex;
+    width: 100vw;
+    height: 55vh;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+.item1 {
+    text-align: center;
+    align-content: center;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-color: #c45e5e;
+    position: absolute;
+    left: 350px;
+    top: 20px;
+    z-index: 0;
+}
+.item1 h1 {
+    margin-bottom: 100px;
+}
+.item1 p {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 55px;
+}
+.item2 {
+    text-align: center;
+    align-content: center;
+    width: 310px;
+    height: 310px;
+    border-radius: 50%;
+    background-color: #c4b55e;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    margin-left: -175px;
+    z-index: 1;
+}
+.item2 h1 {
+    margin-bottom: 100px;
+}
+.item2 p {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 55px;
+}
+.item3 {
+    text-align: center;
+    align-content: center;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-color: #e5f5b8;
+    position: absolute;
+    right: 350px;
+    top: 20px;
+    z-index: 0;
+}
+.item3 h1 {
+    margin-bottom: 100px;
+}
+.item3 p {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 55px;
+}
+.tituloAvaliacoes {
+    text-align: center;
+    font-size: 30px;
+    
+}
+.avaliacoes {
+    align-items: center;
+    width: 100vw;
+    height: 60vh;
+    background-color: #353b48;
+    gap: 20px;
+    display: flex;
+	flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+}
+.foto1 {
+    width: 25vw;
+    height: 40vh;
+}
+.foto1 img {
+    width: 25vw;
+    height: 40vh;
+}
+.foto2 {
+    width: 35vw;
+    height: 40vh;
+}
+.foto2 img {
+    width: 35vw;
+    height: 40vh;
+}
+.foto3 {
+    width: 25vw;
+    height: 40vh;
+}
+.foto3 img {
+    width: 25vw;
+    height: 40vh;
+}
+.imgsProffs {
+    width: 100vw;
+    height: 60vh;
+    background-color: #006e4ab7;
+    display: flex;
+    align-content: center;
+    flex-direction:row;
+	justify-content:space-around;
+    align-items:center; 
+}
+.fotopff1 {
+    height: 55vh;
+    background-color: #fff;
+    width: 20vw;
+}
+.fotopff1 img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.fotopff2 {
+    height: 55vh;
+    background-color: #fff;
+    width: 20vw;
+}
+.fotopff2 img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.fotopff3 {
+    height: 55vh;
+    background-color: #fff;
+    width: 20vw;
+}
+.fotopff3 img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.fotopff4 {
+    height: 55vh;
+    background-color: #fff;
+    width: 20vw;
+}
+.fotopff4 img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.tituloProfessores {
+    width: 100vw;
+    text-align: center;
+    font-size: 30px;
+}
+.imgsProffs p {
+    text-align: center;
+}
+.tituloGestao {
+    height: 10vh;
+    width: 100vw;
+    background-color: #abff9b;
+    color: #353b48;
+    text-align: center;
+    font-size: 40px;
+    align-content: center;
+}
+.gestao {
+    height: 100vh;
+    width: 100vw;
+    background-color: #c4b55e;
+
+}
+.sps {
+    background-color: #c4b55e;
+    color: #c4b55e;
+    height: 15vh;
+    width: 100vw;
+}
+.img_gestao {
+    margin-left: 280px;
+    width: 65vw;
+    height: 75vh;
+}
+.img_gestao img {
+    border-radius: 15%;
+    width: 65vw;
+    height: 75vh;
+}
+.tituloDestaques {
+    height: 10vh;
+    width: 100vw;
+    background-color: #abff9b;
+    color: #353b48;
+    text-align: center;
+    font-size: 40px;
+    align-content: center;
+}
+.destaques {
+    height: 55vh;
+    width: 100vw;
+    background-color: #218c74;
+}
+.imgs_destaques {
+    background-color: #fff;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.imgs_destaques img {
+    margin-top: 25px;
+    height: 280px;
+    width: 280px;
+    border-radius: 10%;
+}
+.criador {
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    width: 100vw;
+    background-color: #cecece;
+    display: flex;
+}
+.imgCriador img {
+    background-color: #c45e5e;
+    height: 380px;
+    width: 380px;
+    border-radius: 50%;
+}
+.infoCriador {
+    margin-left: 30px;
+}
+.rodape {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 80px;
+    color: #fff;
+    display: flex;
+    height: 35vh;
+    width: 100vw;
+    background-color: #00319cd2;
+}
+.vid1 h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.vid2 h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.vid2 p {
+    margin-bottom: 40px;
+}
+.vid3 ul {
+    list-style: none;
+}
+.vid3 h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.rodape div {
+    width: 32vw;
+}
+.pai{
+    text-align: center;
+	width: 100vw;
+	height:90vh;
+/*	padding:3px;*/
+	display: flex;
+	flex-direction:row;
+	justify-content:space-around; /* space-between */ 
+    align-items:center; 
+}
+.col1,.col2,.col3{
+    background-color: #fff;
+	width:32vw;
+	height:86vh;
+	border-radius:3px;
+	margin:3px;
+	box-sizing:border-box;
+
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+}
+
+.col1 > .linha1, .col1 > .linha2{
+	width: 30vw;
+	height: 42vh;
+	margin: 6px;
+    border: 1px solid blue;
+}
+.col1 > .linha2{
+    border: 1px solid blue;
+}
+
+.dani, .cla, .edi{
+	width: 30vw;
+	height: 28vh;
+	border: 1px solid blue;
+	margin: 2px;
+}
+
+.daniCord, .claCord, .ediCord{
+	width: 30vw;
+	height: 28vh;
+	border: 1px solid blue;
+	margin: 2px;
+}
+
